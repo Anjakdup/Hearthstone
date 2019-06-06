@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-image: url(images/bg.jpg); background-size: 100% 100%;height: 750px; width: 720px;">
+
+
+
+	
+
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+	let getrandom = function(){ 
+		
+		let rand = Math.random()*10
+		let round = Math.round(rand)
+		
+		return round;
+		
+
+
+	}
+	let leha = [
+	"images/1.png",
+	"images/2.png",
+	"images/3.png",
+	"images/4.png",
+	"images/5.png",
+	"images/6.png",
+	"images/7.png",
+	"images/8.png",
+	"images/9.png",
+	"images/10.png"];
+
+
+	
+		let playercard = function() {
+			
+			for(let index = 0; index<4; index = index + 1){
+				
+			
+			let imga = document.createElement("img");
+			imga.src = leha[getrandom()];
+
+			document.body.appendChild(imga);
+			
+			imga.style.width= "150px" 
+			imga.style.height= "200px"	
+
+			
+
+			}
+		
+		}
+
+		let enemycard = function() { 
+
+			for(let index = 0; index<4; index = index + 1){
+				
+			
+			let imga = document.createElement("img");
+			imga.src = leha[getrandom()];
+
+			document.body.appendChild(imga);
+			
+			imga.style.width= "150px" 
+			imga.style.height= "200px"	
+				imga.style.marginLeft= 
+				imga.style.marginTop= ""			
+
+		}
+		}
+</script>
